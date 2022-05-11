@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redução de tempo de vida de um Fumante</title>
+</head>
+<body>
+    <script>
+        var qtdecigarrosdia = Number(window.prompt('Quantos Cigarros fuma por dia? :'))
+        var qtdeanosfumou = Number(window.prompt('Quando anos ja fumou ?:'))
+        var redminutos = qtdeanosfumou * qtdecigarrosdia * 10
+        var reddias = redminutos / (24 * 60)
+        var arredondamento = parseFloat(reddias.toFixed(1))
+        document.write(`Total de dias de vida perdida ${arredondamento}`)
+       
+    </script>
+</body>
+</html>

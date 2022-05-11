@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Dolares </title>
+</head>
+<body>
+    <script>
+        var valoremreal = Number(window.prompt (`Valor em Conta R$:`))
+        var cotacaodola = window.prompt(`Valor do Dolar atual:`)
+        var compra = (valoremreal / cotacaodola)
+        var arredondamento = parseFloat(compra.toFixed(2)) // comando para arredondamento
+       
+        document.write(`Poderá compras com ${valoremreal} US$ ` + String(arredondamento))
+
+    </script>
+    
+</body>
+</html>

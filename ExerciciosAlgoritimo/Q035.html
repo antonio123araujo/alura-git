@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguem de Carros</title>
+  
+
+</head>
+<body>
+
+        <reader>
+            <h1>Calculo de Aluguel de Carros</h1>
+        </reader>
+
+        <section>
+            <div>
+                <P>Quantos dias de aluguel do Carro:
+                    <input type="number" name="txtdia" id="txtdia" >
+                     </p>
+                     <p>Aluguel:
+                         <input type="radio" name="radioaluguel" id="pop"
+                         <label for="pop" > popular</label>
+                         <input type="radio" name="radioaluguel" id="luxo">                         
+                         <label for="lux">luxo</label> 
+                     </p>
+
+
+            </div>
+        </section>
+    
+        <input type="checkbox" id="Carro de luxo"checkbox name="luxo">
+        <label for="='luxo" >Luxo</label>          
+
+        <input type="checkbox" id="Carro de popular"checkbox name="popular">
+        <label for="='luxo" >popular</label>  
+        <input type="button" value="Verifica" onclick="calcular()">
+    
+    <div id="res"></div>
+
+    <script>
+
+        function calcular(){
+        var diasalugado = window.document.querySelector('input#luxo')
+        var kmpercorrido = window.document.querySelector('input#popular')
+        var res = window.document.querySelector('div#res')
+        var pop = diasalugado * 90
+
+        if( pop <= 100){
+            var aluguel = pop + diasalugado
+            document.write(`${pop} `)
+
+        }
+        }
+
+
+    </script>
+    
+</body>
+</html>

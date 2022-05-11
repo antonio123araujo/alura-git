@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoção dia da mulher</title>
+</head>
+<body>
+
+    <script>
+var nome = window.prompt('Nome do Cliente')
+var sexo = window.prompt('Qual e o sexo do cliente')
+var valorcompra = Number (window.prompt('Valor da compra'))
+
+var m = valorcompra * 0.05
+var fe = valorcompra * 0.13
+
+        if (sexo == m){
+     
+        var desconto = valorcompra - m    
+        document.write(`deconto ` + String(desconto))
+}
+else {
+ 
+    var desc = valorcompra - fe
+    document.write(`deconto ` + String(desc))
+     
+}
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de Carros</title>
+</head>
+<body>
+    <script>
+        var diaslocados  = Number(window.prompt('Quantos dias foi alugado ?'))
+        var kmpercorrido = Number(window.prompt('Qual e a quantidade  km Percorrida ? :'))
+        var totaldiaslocado =  diaslocados * 90
+        var km = kmpercorrido * (0.20)
+               total = totaldiaslocado + km
+        document.write(`Preço total Pagar pelo Aluguel de ${diaslocados} dias é = `  + String(total))
+    </script>
+</body>
+</html>

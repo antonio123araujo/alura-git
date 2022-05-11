@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de media</title>
+</head>
+<body>
+    <script>
+        var nota1 = Number(window.prompt('Digite a primeira nota:'))
+        var nota2 = Number(window.prompt('Digite a segunda nota:'))
+        Media = (nota1 + nota2)/2
+      
+        if (Media <= 4.9){
+            document.write(`Aluno Reprovado ` + String(Media))
+
+
+        }
+        else if (Media <= 6.9 ){
+            document.write(`Aluno de Recuperação ` + String(Media))
+
+        }
+        else{
+            document.write(`Aluno APROVADO ` + String(Media))
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprestimo Bancario</title>
+</head>
+<body>
+    <script>
+        var valorcasa = Number(window.prompt('Valor da casa:'))
+        var salario = Number (window.prompt('Qual é sua renda?:'))
+        var anosparapagar = Number(window.prompt('Quantos anos irá pagar ?:'))
+
+
+             var anosmes = anosparapagar * 12
+             var vlprestacao = valorcasa / anosmes
+             var arredondamento = parseFloat(vlprestacao.toFixed(2)) // comando para arredondamento
+             document.write(`Valor da prestação é:` + String(arredondamento)) 
+             var arred = arredondamento
+
+                var sal = (salario * 0.30) 
+
+if (arred < sal)
+{
+    document.write(`Aprovado`) 
+}
+else{
+    document.write(`Reprovado`) 
+}
+           
+        
+    </script>
+    
+</body>
+</html>

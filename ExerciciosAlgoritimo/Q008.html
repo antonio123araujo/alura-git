@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Distancia</title>
+</head>
+<body>
+    <script>
+        var distancia = Number(window.prompt('Infrme a distancia em Metros:'))
+        var medias = distancia / 1000
+        var hm = distancia / 100 
+        var dam = (distancia * 1000) / 10 // dam = decametro
+        var dc = distancia * 10 //dc =  decimentro
+        var cm = distancia * 100
+        var mm = distancia * 1000
+        document.write(`A distancia de ${distancia} corresponde a KM :` + String(medias)) 
+        document.write(`<p> </p>`) 
+        document.write(`A distancia de ${distancia} corresponde a HM :` + String(hm))
+        document.write(`<p> </p>`)
+        document.write(`A distancia de ${distancia} corresponde a Dam:` + String(dam))
+        document.write(`<p> </p>`)
+        document.write(`A distancia em ${distancia} corresponde a DM:` + String(dc))
+        document.write(`<p> </p>`)
+        document.write(`A distancia em ${distancia} corresponde a CM:` + String(cm))
+       document.write(`<p> </p>`)
+        document.write(`A distancia em ${distancia} corresponde a MM:` + String(mm))
+
+    </script>
+</body>
+</html>

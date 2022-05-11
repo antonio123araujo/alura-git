@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - Massa Corporal</title>
+</head>
+<body>
+    <script>
+        var altura = Number(window.prompt('Qual sua altura ? :'))
+        var peso = Number (window.prompt('Qual e seu peso ?:'))
+
+        var imc = peso / (altura * altura)  // formula  icm = massa / altura²
+        var arredondamento = parseFloat(imc.toFixed(2))
+
+        if (arredondamento <= 18.5){
+            document.write (`Sua massa corporal é:  ${arredondamento} <p> Abaixo do Peso </p>`)
+
+               }
+               else if (arredondamento <= 25)
+               {
+                document.write (`Sua massa corporal é:  ${arredondamento} <p> Peso Ideal </p>`)
+               }
+
+               else if (arredondamento <= 30)
+               {
+                document.write (`Sua massa corporal é:  ${arredondamento} <p> Sobrepeso </p>`)
+               }
+               else if (arredondamento <= 40)
+               {
+                document.write (`Sua massa corporal é:  ${arredondamento} <p> Obesidade </p>`)
+               }
+
+        else{
+            document.write (`Sua massa corporal é:  ${arredondamento} <p> obseidade mórbida </p>`)
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

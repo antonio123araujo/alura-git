@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Media</title>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Informe o nome do Aluno')
+        var nota1 = Number(window.prompt('Informe a nota1:'))
+        var nota2 = Number(window.prompt('Informe a nota2:'))
+        var media = (nota1 + nota2) / 2
+
+       document.write(`A Média das notas do Aluno:  ${nome} é: ` + String(media))
+       document.write(`<p> </p>`)
+        if (media >= 7){
+           
+            document.write(`Aluno com otimo aproveitamento `)
+            
+
+
+}
+else
+{
+    document.write(`<p> </p>`)
+    document.write(`<P>Aluno não obteve bom aproveitamento </P>`)
+}
+    </script>
+    
+</body>
+</html>

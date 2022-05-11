@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Idade </title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var txtv = Number(window.prompt('informe o ano de nascimento'))
+        var anoletivo = Number(window.prompt('informe o ano atual:'))
+        var res = window.document.querySelector('div#res')
+        var val =  anoletivo - txtv
+
+        //document.write(`Sua idade é ` + String(val))
+        if (val > 18 ){
+        document.write(`Usuario com idade acima de 18 anos: Idade atual é :  ${val} Anos, Votação Liberada`)
+        }
+        else {
+            document.write(`Usuario com idade menor que 18 anos: Idade atual é :  ${val} Anos, Votação não Liberada`)
+        }
+        
+    </script>
+
+</html>
